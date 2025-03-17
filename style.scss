@@ -10,7 +10,7 @@ body{
     margin: o;
 }
 .flex-container{
-    background-image: url(bg-masthead.jpg);
+    background-image: url(images/bg-masthead.jpg);
     background-position: center;
     background-size: cover;
     display: flex;
@@ -19,6 +19,7 @@ body{
     width: 100%;
     align-items: center;
     justify-content: center;
+    object-fit: contain;
         
     }
 h1{
@@ -106,7 +107,7 @@ h3{
     background-color: rgb(184, 181, 181);
     border: none;
     position: fixed;
-    right: 12px;
+    right: 10px;
     top: 12px;
 
     .home{
@@ -231,7 +232,7 @@ h3{
 }
 
 .website{
-    background-image:url(portfolio-4.jpg) ;
+    background-image:url(images/portfolio-4.jpg) ;
     background-position: top;
     background-size: cover;
     width: 100%;
@@ -369,7 +370,7 @@ h6{
 
 .location{
     display: flex;
-    background-image:url(IMG-20250223-WA0039.jpg) ;
+    background-image:url(images/portfolio-4.jpg) ;
     background-position: top;
     background-size: cover;
     width: 100%;
@@ -491,7 +492,7 @@ font-size:12px ;
     flex-wrap: wrap;
     width: 100%;
     height: 400px;
-    background-image: url(IMG-20250223-WA0039.jpg);
+    background-image: url(images/IMG-20250223-WA0039.jpg);
     background-position: top;
     background-size: cover;
     width: 100%;
@@ -543,13 +544,33 @@ social{
 
 
 
-
-
-
-
-
-
 @media (max-width:768px) {
+    .flex-container{
+        background-image: url(images/bg-masthead.jpg);
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        height:100vh;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        overflow-x: hidden;
+            
+        }
+        .bagger-menu{
+            display: flex;
+            flex-direction: column;
+            border-radius: 4px;
+            padding:px;
+            background-color: rgb(184, 181, 181);
+            border: none;
+            position: fixed;
+            right:40px;
+            padding:6px;
+            top: 12px;
+        }
+
     .flex-container{
         background-position: center;
         height:70vh;
@@ -638,6 +659,7 @@ h3{
         p{
             margin-top: -11px;
         }
+        
     
         
             
@@ -744,9 +766,49 @@ h3{
 }
 
 @media (max-width:576px) {
+    .flex-container{
+        background-image: url(images/bg-masthead.jpg);
+        background-position: center;
+        object-fit:contain;
+            
+        }
+        .bagger-menu{
+            display: flex;
+            flex-direction: column;
+            border-radius: 4px;
+            padding:px;
+            background-color: rgb(184, 181, 181);
+            border: none;
+            position: fixed;
+            right:40px;
+            padding:6px;
+            top: 12px;
+        }
+        .flex-container{
+            background-position: center;
+            height:70vh;
+            width: 100%;        
+        }
+        h1{
+        
+            display: flex;
+            font-size:25px;
+        
+
+        }
+        p1{
+            display: flex;
+            font-size:12px;
+            color:$text-color;
+            justify-content: center;
+            text-align: center;
+            margin-top:-12px;
+            
+        }
 
     .portfolio{
         height:200px
+
         
     }
     
@@ -754,8 +816,8 @@ h3{
         display: flex;
         font-size:14px;
         margin-top:-30px;
-        padding-left: 20px;
-        padding-right: 20px;
+        padding-left: 25px;
+        padding-right: 25px;
 
     
 }
