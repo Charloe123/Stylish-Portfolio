@@ -3,15 +3,19 @@ $secondary-color:#fff;
 $tertiary-color:#1d809f;
 $text-color:#14030a;
 
+*{
+    padding: 0;
+    margin: o;
+    box-sizing: border-box;
+}
 body{
     font-family: sans-serif;
     overflow-x: hidden;
-    padding: 0;
-    margin: o;
+   
 }
 .flex-container{
     background-image: url(images/bg-masthead.jpg);
-    background-position: center;
+    background-position-x: right;
     background-size: cover;
     display: flex;
     flex-direction: column;
@@ -488,14 +492,13 @@ font-size:12px ;
 
 }
 .map{
-    display: flex;
-    flex-wrap: wrap;
+  
     width: 100%;
     height: 400px;
-    background-image: url(images/IMG-20250223-WA0039.jpg);
-    background-position: top;
-    background-size: cover;
+   iframe{
     width: 100%;
+    height: 100%;
+   }
 }
 .footer{
     width: 100%;
@@ -547,7 +550,7 @@ social{
 @media (max-width:768px) {
     .flex-container{
         background-image: url(images/bg-masthead.jpg);
-        background-position: center;
+        background-position: left;
         background-size: cover;
         display: flex;
         flex-direction: column;
@@ -768,8 +771,9 @@ h3{
 @media (max-width:576px) {
     .flex-container{
         background-image: url(images/bg-masthead.jpg);
-        background-position: center;
-        object-fit:contain;
+        background-position: left;
+        background-size: cover;
+        height: 50vh;
             
         }
         .bagger-menu{
